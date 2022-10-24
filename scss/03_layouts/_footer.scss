@@ -1,0 +1,30 @@
+/*ESTILOS DEL FOOTER*/
+.footer {
+    background-color: black;
+    color: white;
+
+    &__footer-bottom {
+        text-align: center;
+        color: gray;
+        font-weight: 400;
+    }
+
+    &__title-footer {
+        padding: 2rem 0 2rem 0;
+
+        @include smartphone {
+            padding: 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    &__social-media {
+        padding: 0 0 2rem 0;
+
+        &--social-media-between {
+            margin: 0 1rem 0 0;
+        }
+
+    }
+
+}

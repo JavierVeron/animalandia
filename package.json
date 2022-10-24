@@ -1,0 +1,20 @@
+{
+  "name": "petshop-hernandez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LOLA-1980/proyecto-final-petshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LOLA-1980/proyecto-final-petshop/issues"
+  },
+  "homepage": "https://github.com/LOLA-1980/proyecto-final-petshop#readme"
+}

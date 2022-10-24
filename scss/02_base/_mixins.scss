@@ -1,0 +1,41 @@
+// Media Queries
+
+// Smartphone width
+// 300px - 480px
+@mixin smartphone {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$mobileSecond-width - 1px}) {
+    @content;
+  }
+}
+
+// Smartphone Second width
+// 480px - 769px
+@mixin smartphoneSec {
+  @media (min-width: #{$mobileSecond-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+// Tablet width
+// 769px - 991px
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+// Laptop width
+// 992px -1199px
+@mixin laptop {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$television-width - 1px}) {
+    @content;
+  }
+}
+
+// Television width
+// 1200 >
+@mixin television {
+  @media (min-width: #{$television-width}) {
+    @content;
+  }
+}

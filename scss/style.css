@@ -1,0 +1,393 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Poppins;
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 100;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*delimita el borde de la caja*/
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: #D4E5F3;
+}
+
+a {
+  color: black;
+  padding: 0 4px;
+  text-decoration: none;
+}
+
+/* ESTILOS DEL MAIN */
+.main-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta {
+  height: 600px;
+  width: 400px;
+  margin: 40px 20px 40px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+.tarjeta__titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.tarjeta__img {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.tarjeta__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20%;
+  justify-content: center;
+}
+.tarjeta__info--precio {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+.tarjeta__info--boton {
+  margin-bottom: 10px;
+  background-color: #91BEB9;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 50px;
+}
+.tarjeta__info--boton:hover {
+  background-image: linear-gradient(to bottom, #3a5552, #91BEB9);
+}
+
+/*ESTILOS DEL FOOTER*/
+.footer {
+  background-color: black;
+  color: white;
+}
+.footer__footer-bottom {
+  text-align: center;
+  color: gray;
+  font-weight: 400;
+}
+.footer__title-footer {
+  padding: 2rem 0 2rem 0;
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .footer__title-footer {
+    padding: 2rem;
+  }
+}
+.footer__social-media {
+  padding: 0 0 2rem 0;
+}
+.footer__social-media--social-media-between {
+  margin: 0 1rem 0 0;
+}
+
+.background, .background-faq, .background-aboutus {
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .background, .background-faq, .background-aboutus {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .background, .background-faq, .background-aboutus {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    background-position: 0%;
+  }
+}
+.background__background-intro {
+  background-image: url(../assets/img/adorable-puppies.jpg);
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .background__background-intro {
+    background-image: url(../assets/img/adorable-puppies.jpg);
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .background__background-intro {
+    background-image: url(../assets/img/adorable-puppies.jpg);
+  }
+}
+.background__background-products {
+  background-image: url(../assets/img/white-bulldog-puppy.jpg);
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .background__background-products {
+    background-image: url(../assets/img/white-bulldog-puppy.jpg);
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .background__background-products {
+    background-image: url(../assets/img/white-bulldog-puppy.jpg);
+  }
+}
+.background__background-contact {
+  background-image: url(../assets/img/doggy-yellow.jpg);
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .background__background-contact {
+    background-image: url(../assets/img/doggy-yellow.jpg);
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .background__background-contact {
+    background-image: url(../assets/img/doggy-yellow.jpg);
+  }
+}
+.background__navbar-title {
+  display: flex;
+  justify-content: space-between;
+  /*padding: 20px 20px 0 20px;*/
+  color: #ffffff;
+}
+.background__navbar-title--black {
+  color: #000000;
+}
+.background__boton-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .background__boton-container {
+    left: 136px;
+    top: 224px;
+  }
+}
+.background__boton-container--text {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.background-aboutus {
+  background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .background-aboutus {
+    background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .background-aboutus {
+    background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+  }
+}
+
+.background-faq {
+  background-image: url(../assets/img/perrito-confundido-signos-interrogacion.jpg);
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .background-faq {
+    background-image: url(../assets/img/perrito-confundido-signos-interrogacion.jpg);
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .background-faq {
+    background-image: url(../assets/img/perrito-confundido-signos-interrogacion.jpg);
+  }
+}
+
+/*ESTILOS GENERALES HEADER, NAVBAR, MENÚ*/
+.nav-width {
+  width: 100%;
+}
+
+/*ESTILOS CARRUSEL*/
+.mRight {
+  margin-right: 160px;
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .mRight {
+    margin-right: 25px;
+  }
+}
+
+.mLeft {
+  margin-left: 160px;
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .mLeft {
+    margin-left: 25px;
+  }
+}
+
+.title {
+  font-size: 35px;
+  padding-left: 30px;
+}
+
+.display-2 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.display-2-intro {
+  font-weight: 700;
+}
+
+.display-2-description {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.download__title {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.center-video {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.menu {
+  display: block;
+}
+
+.icon-paw {
+  font-size: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+.icon-paw--black {
+  color: #000000;
+}
+
+/*ESTILOS ABOUT US*/
+.pilares {
+  position: relative;
+  left: 30rem;
+}
+
+.pilares__size {
+  font-size: 1.2rem;
+}
+
+.background-Gray {
+  background-color: #f2ecec;
+}
+
+.is-font-size-20 {
+  font-size: 20px;
+}
+
+@media (min-width: 360px) and (max-width: 479px) {
+  .video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16/9 ratio */
+    padding-top: 30px;
+    /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 479px) {
+  .video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*ESTILOS INTRO*/
+.title-intro {
+  display: flex;
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .title-intro {
+    padding-top: 8px;
+  }
+}
+
+/*ESTILOS PRODUCTS*/
+.table-padding {
+  padding: 2rem;
+}
+
+/*ESTILOS FAQ*/
+.faq-section {
+  padding: 3rem 10rem 0 10rem;
+}
+
+/*.img-perrito {
+    background: url(../assets/img/questionMark-Dog.jpg);
+    height: 500px;
+    width: 500px;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 10rem;
+    left: 60rem;
+    opacity: .3;
+}*/
+.imgResp {
+  height: 250px;
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 360px) and (max-width: 479px) {
+  .hidden {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+/*ESTILOS CARRUSEL*/
+.mRight {
+    margin-right: 160px;
+
+    @include smartphone {
+        margin-right: 25px;
+    }
+}
+
+.mLeft {
+    margin-left: 160px;
+
+    @include smartphone {
+        margin-left: 25px;
+    }
+}

@@ -1,0 +1,150 @@
+.title {
+    font-size: 35px;
+    padding-left: 30px;
+}
+
+.display-2 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.display-2-intro {
+    font-weight: 700;
+}
+
+.display-2-description {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.download__title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.center-video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: block;
+}
+
+.icon-paw {
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+
+    &--black {
+        color: #000000;
+    }
+}
+
+
+/*ESTILOS ABOUT US*/
+.pilares {
+    position: relative;
+    left: 30rem;
+}
+
+.pilares__size {
+    font-size: 1.2rem;
+}
+
+
+.background-Gray {
+    background-color: #f2ecec;
+}
+
+.is-font-size-20 {
+    font-size: 20px;
+}
+
+@include smartphone {
+    .is-font-size-about {
+        font-size: 22px;
+    }
+
+    .whoAreWe {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+.video-responsive {
+    @include smartphone {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16/9 ratio */
+        padding-top: 30px;
+        /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    @include smartphone {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/*ESTILOS INTRO*/
+.title-intro {
+    display: flex;
+
+    @include smartphone {
+        padding-top: 8px;
+    }
+}
+
+
+/*ESTILOS PRODUCTS*/
+.table-padding {
+    padding: 2rem;
+}
+
+
+/*ESTILOS FAQ*/
+.faq-section {
+    padding: 3rem 10rem 0 10rem;
+}
+
+/*.img-perrito {
+    background: url(../assets/img/questionMark-Dog.jpg);
+    height: 500px;
+    width: 500px;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 10rem;
+    left: 60rem;
+    opacity: .3;
+}*/
+
+.imgResp {
+    height: 250px;
+    width: 100%;
+    display: block;
+}
+
+.hidden {
+    @include smartphone {
+        display: none;
+    }
+
+}

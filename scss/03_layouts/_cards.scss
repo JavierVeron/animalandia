@@ -1,0 +1,76 @@
+/* ESTILOS DEL MAIN */
+
+.main-title {
+  text-align: center;
+  margin-top: 20px;
+
+  @include smartphone {
+    font-size: 2rem;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta {
+  height: 600px;
+  width: 400px;
+  margin: 40px 20px 40px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+
+  &__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    justify-content: center;
+
+    &--precio {
+      font-size: 1.2rem;
+      margin: 10px;
+    }
+
+    &--boton {
+      margin-bottom: 10px;
+      background-color: #91BEB9;
+      padding: 15px;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      border-radius: 50px;
+
+      &:hover {
+        background-image: linear-gradient(to bottom, #3a5552, #91BEB9);
+      }
+
+    }
+
+  }
+
+}
