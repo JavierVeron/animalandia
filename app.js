@@ -7,6 +7,7 @@ $('.carousel').carousel({
 
 // Array Productos ---- PRODUCTOS.HTML------
 const productos = [{
+    id: 1,
     titulo: "Nupec croquetas para Perros, Adulto Razas pequeñas, con Omega 3 y 6, presentación de 8 kg.",
     img: "./assets/img/NUPEC1.jpg",
     alt: "croqueta Nupec Aulto pequeño",
@@ -14,6 +15,7 @@ const productos = [{
     descripcion: "Nutrición Canina Científica Contiene omega 3, 6 y vitaminas.Aporta balance de aminoácidos.Para perros adultos, razas pequeñas.5 KG."
 },
 {
+    id:2,
     titulo: "Nupec croquetas para Perros, Adulto Razas pequeñas, con Omega 3 y 6, presentación de 8 kg.",
     img: "./assets/img/nupec2.jpg",
     alt: "croqueta Nupec Aulto pequeño",
@@ -22,6 +24,7 @@ const productos = [{
 
 },
 {
+    id:3,
     titulo: "Nupec croquetas para Perros, Adulto Razas pequeñas, con Omega 3 y 6, presentación de 8 kg.",
     img: "./assets/img/NUPEC1.jpg",
     alt: "croqueta Nupec Aulto pequeño",
@@ -30,6 +33,7 @@ const productos = [{
 
 },
 {
+    id:4,
     titulo: "Nupec croquetas para Perros, Adulto Razas pequeñas, con Omega 3 y 6, presentación de 8 kg.",
     img: "./assets/img/NUPEC1.jpg",
     alt: "croqueta Nupec Aulto pequeño",
@@ -38,6 +42,7 @@ const productos = [{
 
 },
 {
+    id:5,
     titulo: "Nupec croquetas para Perros, Adulto Razas pequeñas, con Omega 3 y 6, presentación de 8 kg.",
     img: "./assets/img/NUPEC1.jpg",
     alt: "croqueta Nupec Aulto pequeño",
@@ -46,6 +51,7 @@ const productos = [{
 
 },
 {
+    id:6,
     titulo: "Nupec croquetas para Perros, Adulto Razas pequeñas, con Omega 3 y 6, presentación de 8 kg.",
     img: "./assets/img/NUPEC1.jpg",
     alt: "croqueta Nupec Aulto pequeño",
@@ -62,13 +68,15 @@ const contTarjetas = document.getElementById('tarjetas');
 function mostrarInfoMascota(array) {
     contTarjetas.innerHTML = ''
     array.forEach(element => {
-        let html = `<div class="tarjeta" id="tarjeta">
-            <h3 class="tarjeta__titulo"> ${element.titulo} </h3>
-            <img src="${element.img}" alt="${element.alt}" class="tarjeta__img">
-            <div class="tarjeta__info">
-                <p class="tarjeta__info--precio"> ${element.precio} </p>
-                <button class="tarjeta__info--boton boton">Agregar al carrito</button>
-                <span class="tarjeta__info--descripcion"> ${element.descripcion} </span>
+        let html = `<div class="col-md-4 pb-5">
+            <div class="tarjeta" id="tarjeta">
+                <h3 class="tarjeta__titulo"> ${element.titulo} </h3>
+                <img src="${element.img}" alt="${element.alt}" class="tarjeta__img">
+                <div class="tarjeta__info">
+                    <p class="tarjeta__info--precio"> ${element.precio} </p>
+                    <span class="tarjeta__info--descripcion"> ${element.descripcion} </span>
+                    <button class="tarjeta__info--boton boton" onclick="addToCarritoItem(${element.id})">Agregar al carrito</button>
+                </div>
             </div>
         </div>`;
         contTarjetas.innerHTML += html;
@@ -78,7 +86,7 @@ mostrarInfoMascota(productos);
 
 
 //--------CARRITO.HTML----------
-//Todos los elementos del DOM que voy a necesitar para crear las tablas en el Carrito de Compras
+/* //Todos los elementos del DOM que voy a necesitar para crear las tablas en el Carrito de Compras
 const clickButton = document.querySelectorAll('.boton')
 
 const tbody = document.querySelector('.tbody')
@@ -146,6 +154,6 @@ function renderCarrito() {
 
     })
 
-}
+} */
 
 

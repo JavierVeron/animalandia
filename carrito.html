@@ -41,7 +41,7 @@
                     </thead>
 
                     <!--CARRITO DE COMPRAS-->
-                    <tbody class="tbody">
+                    <tbody id="tabla_carrito" class="tbody">
                         <!--AQUI VAN LAS TABLAS DE PRODUCTOS QUE VAN A SER COMPRADOS HECHAS CON JS-->
                     </tbody>
                 </table>
@@ -49,7 +49,7 @@
                 <br><br>
                 <div class="row mx-4">
                     <div class="col">
-                        <h3 class="itemCartTotal">Total: 0</h3>
+                        <h3 class="itemCartTotal">Total: <span id="total_carrito"></span></h3>
                     </div>
                     <div class="col d-flex justify-content-end">
                         <button class="btn btn-success">COMPRAR</button>
@@ -80,9 +80,10 @@
         crossorigin="anonymous"></script>
 
     <!-- ARCHIVO JS -->
-    <script src="app.js"></script>
-
-
+    <script src="carrito.js"></script>
+    <script>
+        renderCarrito();
+    </script>
 </body>
 
 </html>
